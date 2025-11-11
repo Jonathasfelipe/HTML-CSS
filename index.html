@@ -1,270 +1,213 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Currículo — Jonathas Felipe</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Currículo — Jonathas Felipe</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    background: #0c0d12;
+    color: #f1f1f1;
+    font-family: "Inter", Arial, sans-serif;
+    line-height: 1.6;
+  }
 
-  <style>
-    /* ---------------------- */
-    /* ESTILO GERAL           */
-    /* ---------------------- */
-    body {
-      margin: 0;
-      padding: 0;
-      background: #0c0c0d;
-      font-family: "Inter", sans-serif;
-      color: #f0f0f0;
-      display: flex;
-      justify-content: center;
-      padding: 40px 20px;
-    }
+  .resume-container {
+    width: 100%;
+    max-width: 980px;
+    margin: 2rem auto;
+    background: #14161d;
+    border-radius: 12px;
+    box-shadow: 0 0 40px rgba(0,0,0,0.4);
+    padding: 2rem;
+  }
 
-    .cv-wrapper {
-      width: 100%;
-      max-width: 1100px;
-      background: #111215;
-      border-radius: 16px;
-      padding: 40px;
-      box-shadow: 0 0 60px rgba(0,0,0,0.5);
-      border: 1px solid rgba(255,255,255,0.05);
-    }
+  /* Header com foto */
+  .header {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    border-bottom: 1px solid #333;
+    padding-bottom: 1.8rem;
+  }
 
-    /* Títulos */
-    h1, h2, h3 {
-      font-family: "Libre Baskerville", serif;
-      margin: 0;
-      font-weight: 700;
-    }
+  .header img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 3px solid #444;
+  }
 
-    h1 {
-      font-size: 2.2rem;
-      color: #c9d5ff;
-    }
+  h1 {
+    font-size: 2.4rem;
+    margin: 0;
+  }
 
-    h2 {
-      margin-top: 40px;
-      font-size: 1.4rem;
-      border-left: 4px solid #4A74FF;
-      padding-left: 12px;
-      margin-bottom: 10px;
-      color: #dbe2ff;
-    }
+  h2 {
+    margin-top: 2.2rem;
+    font-size: 1.5rem;
+    color: #e1b570;
+  }
 
-    h3 {
-      font-size: 1.1rem;
-      color: #d3d3d3;
-    }
+  a {
+    color: #89b4ff;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
 
-    /* Layout */
-    .header {
-      display: flex;
-      justify-content: space-between;
-      gap: 30px;
-      flex-wrap: wrap;
-      margin-bottom: 30px;
-    }
+  .section {
+    margin-top: 1.5rem;
+  }
 
-    .left, .right {
-      width: 48%;
-    }
+  .skill-tag {
+    display: inline-block;
+    padding: 0.32rem 0.65rem;
+    margin: 0.25rem;
+    background: #1f222c;
+    border: 1px solid #333;
+    border-radius: 6px;
+    font-size: 0.85rem;
+  }
 
-    @media (max-width: 800px) {
-      .left, .right {
-        width: 100%;
-      }
-    }
+  .project {
+    background: #1a1c24;
+    padding: 1rem;
+    border-radius: 10px;
+    margin: 0.7rem 0;
+    border: 1px solid #252832;
+  }
 
-    p, li {
-      line-height: 1.6;
-      color: #d7d7d7;
-    }
+  .project a {
+    color: #e1b570;
+  }
 
-    a {
-      color: #8faaff;
-      text-decoration: none;
-    }
-
-    /* Skills */
-    .skills {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-    }
-
-    .skill {
-      background: #1a1c22;
-      padding: 6px 12px;
-      border-radius: 6px;
-      border: 1px solid rgba(255,255,255,0.08);
-      font-size: 0.9rem;
-      color: #c4c8d6;
-    }
-
-    /* Projetos */
-    .project {
-      background: #1a1a1f;
-      padding: 14px 18px;
-      border-radius: 10px;
-      border: 1px solid rgba(255,255,255,0.08);
-      margin-bottom: 15px;
-    }
-
-    .project strong {
-      color: #dbe2ff;
-    }
-
-    /* Foto futuramente */
-    .photo-box {
-      width: 160px;
-      height: 160px;
-      background: #22242b;
-      border-radius: 12px;
-      border: 1px dashed #4A74FF;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: #4A74FF;
-      font-size: 0.9rem;
-      margin-bottom: 20px;
-    }
-  </style>
+  .footer {
+    margin-top: 3rem;
+    text-align: center;
+    color: #777;
+    font-size: 0.9rem;
+  }
+</style>
 </head>
-
 <body>
 
-<div class="cv-wrapper">
+<div class="resume-container">
 
-  <!-- CABEÇALHO -->
+  <!-- HEADER -->
   <div class="header">
+    <img src="IMG_20240508_222755_930.webp" alt="Foto de Perfil">
 
-    <!-- FOTO -->
-    <div class="photo-box">
-      Foto futuramente
+    <div>
+      <h1>Jonathas Felipe Cardoso dos Santos</h1>
+      <p>Desenvolvedor Web Júnior • Criador de Experiências Digitais • Estudante de IA</p>
+
+      <p>Email: <a href="mailto:jonathasfelipesantos18@gmail.com">jonathasfelipesantos18@gmail.com</a></p>
+      <p>GitHub: <a href="https://github.com/JonathasFelipe">github.com/JonathasFelipe</a></p>
+      <p>Instagram: <a href="https://instagram.com/eujonathasfelipe">@eujonathasfelipe</a></p>
     </div>
-
-    <div style="flex:1; min-width:250px">
-      <h1>Jonathas Felipe</h1>
-      <p style="color:#9ca3b6; margin-top:8px;">
-        Desenvolvedor Front-End Júnior  
-        • Criador de Experiências Digitais  
-        • Estudante de Inteligência Artificial
-      </p>
-
-      <p style="margin-top:18px;">
-        <strong>Email:</strong> seuemail@exemplo.com<br>
-        <strong>GitHub:</strong> <a href="https://github.com/Jonathasfelipe">github.com/Jonathasfelipe</a><br>
-        <strong>Portfólio:</strong> <a href="https://jonathasfelipe.github.io/HTML-CSS/">jonathasfelipe.github.io/HTML-CSS</a>
-      </p>
-    </div>
-
   </div>
-
-  <!-- RESUMO PROFISSIONAL -->
-  <h2>Resumo Profissional</h2>
-  <p>
-    Profissional dedicado e observador, com aprendizado constante e capacidade de entender sistemas de forma profunda.
-    Atua no desenvolvimento web, criação de interfaces, estruturação lógica e estudo de IA generativa.
-    Busca sempre unir clareza técnica, propósito e criatividade.
-  </p>
 
   <!-- OBJETIVO -->
   <h2>Objetivo</h2>
-  <p>Atuar como Desenvolvedor Front-End Júnior, Estagiário em IA ou Criador de Experiências Digitais.</p>
+  <p>"Quero que as empresas me vejam como alguém dedicado, curioso e que aprende no ritmo certo, sempre buscando entender profundamente aquilo que faz."</p>
+
+  <!-- HABILIDADES -->
+  <h2>Habilidades</h2>
+  <div class="section">
+    <span class="skill-tag">HTML5</span>
+    <span class="skill-tag">CSS3</span>
+    <span class="skill-tag">JavaScript</span>
+    <span class="skill-tag">Python (IA)</span>
+    <span class="skill-tag">Git & GitHub</span>
+    <span class="skill-tag">UI/UX básico</span>
+    <span class="skill-tag">Acessibilidade</span>
+    <span class="skill-tag">Design Responsivo</span>
+    <span class="skill-tag">Unreal Engine 5 (conceitos)</span>
+    <span class="skill-tag">Aprendizado de Máquina</span>
+    <span class="skill-tag">Arquitetura de Sites</span>
+  </div>
+
+  <!-- PROJETOS -->
+  <h2>Projetos (Todos Reais)</h2>
+  
+  <div class="project">
+    <strong>📘 Portfólio Web Completo</strong><br>
+    <a href="https://jonathasfelipe.github.io/HTML-CSS/">Ver Projeto</a>
+  </div>
+
+  <div class="project">
+    <strong>🪐 Sistema Solar Interativo</strong><br>
+    Modelo com HTML, CSS e JavaScript.  
+    <a href="https://jonathasfelipe.github.io/HTML-CSS/solar">Abrir</a>
+  </div>
+
+  <div class="project">
+    <strong>🎮 Jogo Tron</strong><br>
+    Implementado com controle por toque e IA básica.  
+    <a href="#">Link Futuro</a>
+  </div>
+
+  <div class="project">
+    <strong>👾 Space Invaders Moderno</strong><br>
+    Tiros, explosões, trilha sonora e upgrades.  
+    <a href="#">Link Futuro</a>
+  </div>
+
+  <div class="project">
+    <strong>📖 Blog Elliot — Reflexões e Tecnologia</strong><br>
+    Estrutura, identidade visual e textos autorais.  
+    <a href="#">Página principal</a>
+  </div>
+
+  <div class="project">
+    <strong>🤖 Jornada de Aprendizado em IA</strong><br>
+    Documentação viva do progresso em Machine Learning.  
+    <a href="#">Abrir Página</a>
+  </div>
+
+  <!-- EXPERIÊNCIA PROFISSIONAL -->
+  <h2>Experiência Profissional</h2>
+
+  <div class="section">
+    <strong>Atendimento ao Cliente</strong> — Empresa local  
+    <p>• Suporte presencial e orientação ao público<br>
+       • Organização e fluxo de atendimento<br>
+       • Resolução de problemas e comunicação clara
+    </p>
+  </div>
+
+  <div class="section">
+    <strong>Comércio e Vendas</strong> — Empresa local  
+    <p>• Atendimento direto ao cliente<br>
+       • Organização e reposição de estoque<br>
+       • Fechamento simples de caixa
+    </p>
+  </div>
+
+  <div class="section">
+    <strong>Produção / Logística</strong> — Empresa local  
+    <p>• Separação e preparo de materiais<br>
+       • Rotinas básicas de produção<br>
+       • Acompanhamento de entregas
+    </p>
+  </div>
 
   <!-- FORMAÇÃO -->
   <h2>Formação</h2>
-  <ul>
-    <li>Ensino Médio Completo</li>
-    <li>Informática Básica — Escotec</li>
-    <li>Curso em Vídeo — HTML/CSS Módulo 1</li>
-  </ul>
+  <p>• Ensino Médio Completo</p>
+  <p>• Informática Básica — Escotec</p>
+  <p>• HTML/CSS (Módulo) — Curso em Vídeo</p>
 
-  <!-- SKILLS -->
-  <h2>Competências Técnicas</h2>
-  <div class="skills">
-    <div class="skill">HTML5</div>
-    <div class="skill">CSS3</div>
-    <div class="skill">JavaScript</div>
-    <div class="skill">Python (IA básica)</div>
-    <div class="skill">Git & GitHub</div>
-    <div class="skill">UI/UX Básico</div>
-    <div class="skill">Arquitetura de Sites</div>
-    <div class="skill">IA Generativa</div>
-    <div class="skill">Unreal Engine 5 (conceitos)</div>
-    <div class="skill">Design Responsivo</div>
-    <div class="skill">Acessibilidade</div>
-    <div class="skill">Conteúdo Educacional</div>
+  <!-- RODAPÉ -->
+  <div class="footer">
+    © 2025 Jonathas Felipe — Currículo Oficial
   </div>
-
-  <!-- EXPERIÊNCIA -->
-  <h2>Experiência Profissional</h2>
-
-  <h3>Atendimento, Vendas e Serviços</h3>
-  <p class="muted">Empresas Locais — 2017 a 2023</p>
-  <ul>
-    <li>Atendimento ao cliente e resolução de dúvidas.</li>
-    <li>Organização e reposição de estoque.</li>
-    <li>Atuação em vendas, balcão e entregas.</li>
-  </ul>
-
-  <h3>Produção e Serviços Operacionais</h3>
-  <p class="muted">Empresas Locais — 2020 a 2022</p>
-  <ul>
-    <li>Organização e conferência de materiais.</li>
-    <li>Suporte em processos operacionais.</li>
-    <li>Auxílio em linhas de produção.</li>
-  </ul>
-
-  <!-- PROJETOS -->
-  <h2>Projetos Técnicos</h2>
-
-  <div class="project">
-    <strong>🌌 Elliot — Blog Experimental</strong>
-    <p>HTML • CSS • JS • Design e conteúdo filosófico-tecnológico.</p>
-  </div>
-
-  <div class="project">
-    <strong>🌍 Sistema Solar Interativo</strong>
-    <p>Visualização animada com planetas, órbitas e HUD informativo.</p>
-  </div>
-
-  <div class="project">
-    <strong>🎮 Tron Experience</strong>
-    <p>Jogo inspirado em TRON com mecânicas e estética neon.</p>
-  </div>
-
-  <div class="project">
-    <strong>👾 Space Invaders — Versão Modificada</strong>
-    <p>Jogo com fases, HUD e efeitos visuais.</p>
-  </div>
-
-  <div class="project">
-    <strong>🤖 Página de Aprendizado em IA</strong>
-    <p>Documentação da jornada em Machine Learning e IA generativa.</p>
-  </div>
-
-  <div class="project">
-    <strong>🧱 Portfólio Web</strong>
-    <p>Estrutura completa em HTML/CSS + organização modular.</p>
-  </div>
-
-  <!-- IDIOMAS -->
-  <h2>Idiomas</h2>
-  <ul>
-    <li>Português — Nativo</li>
-    <li>Inglês — Leitura técnica</li>
-  </ul>
-
-  <!-- FRASE PROFISSIONAL -->
-  <h2>Perfil</h2>
-  <p style="color:#b6bdd3;">
-    “Quero que as empresas me vejam como alguém dedicado, curioso e que aprende no tempo certo.
-    Um profissional que acredita no valor da clareza, da consistência e da evolução contínua.”
-  </p>
-
 </div>
 
 </body>
